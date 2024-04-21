@@ -127,7 +127,7 @@ All connection information for Azure Cosmos DB and Azure OpenAI Service is zero-
 The provided ARM or Bicep Template will provision the following resources:
 1. Azure Cosmos DB for MongoDB vCore. This stores retail data with IVF or HNSW vectors and the user prompts and completions from the chat application.
 1. Azure App service. This will be configured to deploy the Search web application from **this** GitHub repository. This will work fine if no changes are made. If you want it to deploy from your forked repository, modify the Deploy To Azure button below.
-1. Azure Open AI account with the `gpt-35-turbo` and `text-embedding-ada-002` models deployed.
+1. Azure OpenAI account with the `gpt-35-turbo` and `text-embedding-ada-002` models deployed.
 1. Azure Functions. This will run on the same hosting plan as the Azure App Service.
 
 **Note:** It will be necessary to increase the quota limits for both Azure OpenAI models once you have provisioned the services for this solution. You can increase these by going into Azure OpenAI studio to deployments and updating the transaction limits. Just set at the maximum allowable.
